@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class LoginController {
 	
-	@RequestMapping(value="/login", method=RequestMethod.GET)
-	@ResponseBody
+	@RequestMapping(value="/login", method=RequestMethod.GET)	
 	public String getLogin(){
 		return "login";
 	}
