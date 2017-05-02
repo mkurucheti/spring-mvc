@@ -5,7 +5,7 @@
 <title>Login Page</title>
 </head>
 <body>
-	<form>
+	<form method="GET" action="dashboard">
 		Login Name: <input type="text"/>
 		Password: <input type="password" />
 		<input type="submit" value="Submit"/>
