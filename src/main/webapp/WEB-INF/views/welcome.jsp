@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Dashboard</title>
+<title>Welcome</title>
 </head>
 <body>
-	<h1>Dashboard page</h1>
+	<h1>Welcome username :${name} Password: ${password} </h1>
 </body>
 </html>
