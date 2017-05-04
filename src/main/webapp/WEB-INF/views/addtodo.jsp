@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Todos List</title>
+<title>Add Todo</title>
 </head>
 <body>
-${todos}
-
-<a href="addtodo" class="button">Add</a>
+	<p><font color="red">${errorMessage}</font></p>
+	<form action="addtodo" method="post">
+		Description : <input type="text" name="desc" /> <input type="submit" value="Add"/>
+	</form>
 </body>
 </html>

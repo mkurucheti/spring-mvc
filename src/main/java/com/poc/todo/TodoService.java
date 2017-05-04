@@ -10,10 +10,12 @@ import org.springframework.stereotype.Service;
 public class TodoService {
 	
 	private static List<Todo> todoList = new ArrayList<Todo>();
+	private static int todoCount = 3;
+	
 	static{
-		todoList.add(new  Todo("mkurucheti", 1, new Date(), false));
-		todoList.add(new  Todo("mkurucheti", 2, new Date(), false));
-		todoList.add(new  Todo("mkurucheti", 3, new Date(), false));
+		todoList.add(new  Todo("mkurucheti", 1, new Date(), false, "hiii"));
+		todoList.add(new  Todo("mkurucheti", 2, new Date(), false, "sdfsdadfd"));
+		todoList.add(new  Todo("mkurucheti", 3, new Date(), false, "sdfdsffsdfsff"));
 	}
 	
 	public List<Todo> retrieveTodos(String user){
@@ -24,6 +26,10 @@ public class TodoService {
 			}			
 		}
 		return filteredTodos;
+	}
+	
+	public void addTodo(String desc){
+		todoList.add(new  Todo("mkurucheti", todoCount++, new Date(), false, desc));
 	}
 
 }
