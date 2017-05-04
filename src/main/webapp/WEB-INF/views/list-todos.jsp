@@ -2,10 +2,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome</title>
+<title>Todos List</title>
 </head>
 <body>
-	<h1>Welcome username :${name} Password: ${password} </h1><br>
-	<h2><a href="listtodos">Click here</a> to go to todo list page..</h2>
+${todos}
 </body>
 </html>
