@@ -8,6 +8,7 @@
 	    
 	    <context:component-scan base-package="com.poc"></context:component-scan>
 	    <mvc:view-controller path="/" view-name="login"/>
+	     
 	    
 	    <bean 
 	    	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -18,5 +19,7 @@
 	    		<value>.jsp</value>	
 	    	</property>
 	    </bean>
+	    <mvc:resources location="/webjars/" mapping="/webjars/**"/>
 	    <mvc:annotation-driven></mvc:annotation-driven>
+	   
 </beans>

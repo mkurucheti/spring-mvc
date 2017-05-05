@@ -3,12 +3,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="<c:url value="webjars/bootstrap/3.3.6/css/bootstrap.min.css" />" rel="stylesheet">
 <title>Todos List</title>
 </head>
 <body>
 	<h1>Todos are here</h1>
-	<div>
-		<table>
+	<div class="container">
+		<table class="table table-striped">
+			<caption>Your Todos are</caption>
 			<thead>
 				<tr>
 					<td>Name</td>
@@ -28,8 +30,13 @@
 				</c:forEach>
 			</tbody>
 		</table>
+		<div>
+			<a href="addtodo" class="button">Add</a>
+		</div>
 	</div>
 
-<a href="addtodo" class="button">Add</a>
+
+<script src="<c:url value="webjars/jquery/1.9.1/jquery.min.js" />"></script>
+<script src="<c:url value="webjars/bootstrap/3.3.6/js/bootstrap.min.js" />"></script>
 </body>
 </html>
